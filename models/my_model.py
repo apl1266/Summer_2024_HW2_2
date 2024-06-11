@@ -39,9 +39,9 @@ class MyModel(nn.Module):
         self.stack = nn.Sequential(
             nn.Conv2d(3, 128, 7, 1, 3),
             nn.ReLU(),
-            nn.MaxPool2d(3, 1, 0),
+            nn.MaxPool2d(3, 1, 1),
             nn.Flatten(),
-            nn.Linear(128 * 30 * 30, 10),
+            nn.Linear(128 * 32 * 32, 10),
 
 
         )

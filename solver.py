@@ -323,6 +323,6 @@ class Solver(object):
 
 
 if __name__ == '__main__':
-    solver = Solver(model='MyModel',learning_rate=0.001, )
+    solver = Solver(model='MyModel',learning_rate=0.001,device="cuda" )
     solver.train()
 
